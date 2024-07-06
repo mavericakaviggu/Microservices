@@ -19,9 +19,9 @@ public class UserController {
     @GetMapping("/{userId}")
     public User getUser(@PathVariable("userId") int userId) {
         User user = new User(userId,"vignesh","9036116577");
-        Post post = restTemplate.getForObject("http://localhost:8081/post/1",Post.class);
+        Post post = restTemplate.getForObject("http://post/post/1",Post.class);
         user.setPost(post);
-        Notification notification = restTemplate.getForObject("http://localhost:8082/notification/1",Notification.class);
+        Notification notification = restTemplate.getForObject("http://notification/notification/1",Notification.class);
         user.setNotification(notification);
         return user;
     }
