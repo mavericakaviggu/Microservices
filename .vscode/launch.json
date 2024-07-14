@@ -1,42 +1,56 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "EurekaserverApplication",
-            "request": "launch",
-            "mainClass": "com.microservice.eurekaserver.EurekaserverApplication",
-            "projectName": "eurekaserver"
-        },
-        {
-            "type": "java",
-            "name": "NotificationApplication",
-            "request": "launch",
-            "mainClass": "com.microservice.notification.NotificationApplication",
-            "projectName": "notification"
-        },
-        {
-            "type": "java",
-            "name": "PostApplication",
-            "request": "launch",
-            "mainClass": "com.microservice.post.PostApplication",
-            "projectName": "post"
-        },
-        {
-            "type": "java",
-            "name": "UserApplication",
-            "request": "launch",
-            "mainClass": "com.microservice.user.UserApplication",
-            "projectName": "user"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ApigatewayApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.apigateway.ApigatewayApplication",
+      "projectName": "apigateway"
+    },
+    {
+      "type": "java",
+      "name": "ApigatewayApplication",
+      "request": "launch",
+      "mainClass": "com.example.apigateway.ApigatewayApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "EurekaserverApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.eurekaserver.EurekaserverApplication",
+      "projectName": "eurekaserver"
+    },
+    {
+      "type": "java",
+      "name": "NotificationApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.notification.NotificationApplication",
+      "projectName": "notification"
+    },
+    {
+      "type": "java",
+      "name": "PostApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.post.PostApplication",
+      "projectName": "post"
+    },
+    {
+      "type": "java",
+      "name": "UserApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.user.UserApplication",
+      "projectName": "user"
+    }
+  ]
 }
