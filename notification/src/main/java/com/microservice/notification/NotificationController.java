@@ -15,4 +15,9 @@ public class NotificationController {
         return notification;
     }
 
+    @GetMapping("/test")
+    public String testEndpoint() {
+        return "Test endpoint is working";
+    }
+
 }
