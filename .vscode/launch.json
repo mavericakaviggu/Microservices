@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "OrderApplication",
+      "request": "launch",
+      "mainClass": "com.microserivce.order.OrderApplication",
+      "projectName": "order"
+    },
+    {
+      "type": "java",
+      "name": "ProductApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.product.ProductApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "ApigatewayApplication",
       "request": "launch",
       "mainClass": "com.microservice.apigateway.ApigatewayApplication",
