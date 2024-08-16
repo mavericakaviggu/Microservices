@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InventoryApplication",
+      "request": "launch",
+      "mainClass": "com.microservice.inventory.InventoryApplication",
+      "projectName": "inventory"
+    },
+    {
+      "type": "java",
       "name": "OrderApplication",
       "request": "launch",
       "mainClass": "com.microserivce.order.OrderApplication",
