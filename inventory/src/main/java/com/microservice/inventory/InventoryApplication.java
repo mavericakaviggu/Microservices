@@ -3,12 +3,14 @@ package com.microservice.inventory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 
 import com.microservice.inventory.model.Inventory;
 import com.microservice.inventory.repository.InventoryRepository;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class InventoryApplication {
 
 	public static void main(String[] args) {

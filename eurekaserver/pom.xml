@@ -31,6 +31,7 @@
 		<spring-cloud.version>2023.0.2</spring-cloud.version>
 	</properties>
 	<dependencies>
+	<!-- dependency for disocvery server microservice (client will be used instead of server for child mocroservices)  -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
@@ -44,6 +45,7 @@
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
+		<!-- Since dependency is added from spring cloud and not from spring boot, we need to perform dependency management  -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
