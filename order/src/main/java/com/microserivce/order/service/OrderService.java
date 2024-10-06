@@ -41,7 +41,7 @@ public class OrderService {
 
         // localhost:8087 can be replaces witht ehsrice name i.e. http://inventory/api/invenotry
         // Call inventory service and place order if product is in stock
-        InventoryResponse[] inventoryReponseArray = webClient.get().uri("http://localhost:8087/api/inventory", 
+        InventoryResponse[] inventoryReponseArray = webClient.get().uri("http://localhost:8088/api/inventory", 
         uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build()).retrieve().bodyToMono(InventoryResponse[].class).block();
 
         boolean allProductStock = Arrays.stream(inventoryReponseArray).allMatch(inventoryResponse -> inventoryResponse.getIsInStock());

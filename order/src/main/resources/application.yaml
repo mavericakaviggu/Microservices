@@ -4,15 +4,23 @@ spring:
     username: root
     password: root4977
     driver-class-name: com.mysql.cj.jdbc.Driver
-    
+  application:
+    name: order
+     
 #jpa settings
   jpa:
     hibernate:
       ddl-auto: update
       # the above line creates a new db evrytime you re-run the application.
       # you can also use 'update' if you dont wanna drop the db you are using.
-      #above code is bare minimum code required to connect to mysql database 
+      # above code is bare minimum code required to connect to mysql database 
 #schema(db) we are using is 'cloud_vendor'.
 
 server:
   port: 8086
+
+
+eureka:
+  client:
+    serviceUr:
+      defaultZone: http://localhost:8761/eureka/ 
